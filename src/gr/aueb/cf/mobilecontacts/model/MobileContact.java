@@ -11,7 +11,8 @@ public class MobileContact extends AbstractEntity {
 
     }
 
-    public MobileContact(String firstname, String lastname, String phoneNumber) {
+    public MobileContact(Long id, String firstname, String lastname, String phoneNumber) {
+        setId(id);
         this.firstname = firstname;
         this.lastname = lastname;
         this.phoneNumber = phoneNumber;
@@ -45,6 +46,7 @@ public class MobileContact extends AbstractEntity {
     public String toString() {
         return "Firstname: " + firstname + ", Lastname: " + lastname + ", Phone Number: " + phoneNumber;
     }
+
 
     @Override
     public boolean equals(Object other) {
