@@ -90,7 +90,7 @@ public class MobileContactServiceImpl implements IMobileContactService {
             }
             return mobileContact;
         } catch (ContactNotFoundException e) {
-            System.err.printf("Contact with id: %d was not found to get returned\n", id);
+            System.err.printf("MobileContactServiceImpl Logger: Contact with id: %d was not found to get returned\n", id);
             throw e;
         }
     }
@@ -111,7 +111,7 @@ public class MobileContactServiceImpl implements IMobileContactService {
             }
             return mobileContact;
         } catch (ContactNotFoundException e) {
-            System.err.printf("Contact with phone number: %s was not found to get returned\n", phoneNumber);
+            System.err.printf("MobileContactServiceImpl Logger: Contact with phone number: %s was not found to get returned\n", phoneNumber);
             throw e;
         }
     }
